@@ -23,13 +23,15 @@ public class prog58t {
 
         double changedue = amountgiven - purchaseprice;
         double dollarsdue = Math.floor(changedue);
-        double quartersdue = Math.floor(changedue / quarter);
+        double gc = (changedue - dollarsdue - 0.25) / 0.25;
+        double dd = (changedue - dollarsdue - 0.25 - 0.10) / 0.10;
 
         System.out.println("Purchase ammount = " + purchaseprice);
         System.out.println("Amount given = " + amountgiven);
         System.out.printf("Change due = %.2f\n", changedue);
 
         System.out.printf("Dollars: %.0f\n", dollarsdue);
-        System.out.printf("Quarters: %.0f\n", quartersdue);
+        System.out.printf("Quarters: %.0f\n", gc);
+        System.out.printf("Dimes: %.2f\n", dd);
     }
 }
