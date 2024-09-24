@@ -25,7 +25,7 @@ public class prog58h {
         double t = numbers.nextDouble();
         System.out.println();
 
-        double exponent = (n*t) / 365;
+        double exponent = n*t / 365;
 
 
         double a = p * (1+Math.pow((0.01*r/n), exponent));
