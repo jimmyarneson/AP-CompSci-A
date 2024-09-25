@@ -25,6 +25,12 @@ public class prog65h {
     }
 
 }
-/?
-
-/?
+/*
+Enter pounds:
+7
+Enter Shillings
+17
+Enter pence:
+9
+Decimal pounds: 7.89
+ */
