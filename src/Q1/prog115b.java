@@ -1,8 +1,8 @@
 package Q1;
-
-public class prog115a {
+import java.util.*;
+public class prog115b {
     public static void main(String[] args) {
-        int lcv = 0; //lcv = loop control variable
+        int lcv = 0;
         while (lcv < 36) {
             lcv += 2.0;
             System.out.println(lcv);
@@ -28,5 +28,4 @@ public class prog115a {
 32
 34
 36
-
  */
