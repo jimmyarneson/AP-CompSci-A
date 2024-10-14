@@ -20,19 +20,45 @@ public class lp4dash6 {
         }
         int max2 = 4;
         int min2 = 1;
+        int range2 = max2 - min2 + 1;
         int opperator = 0;
+        String opp = " ";
         for (int i = 0; i < 4; i++) {
-            opperator = (int)(Math.random() * range) + min;
+            opperator = (int)(Math.random() * range2) + min2;
         }
         if (opperator == 1){
-            System.out.print("*");
+            opp =("*");
         } else if (opperator == 2) {
-            System.out.print("+");
+            opp = ("+");
         } else if (opperator == 3) {
-            minus = ("-");
+            opp = ("-");
         } else if (opperator == 4) {
-            System.out.print("/");
+            opp = ("/");
         }
-        System.out.println("What is " +num1 + " " + opperator + " " + num2);
+        System.out.println("What is " +num1 + " " + opp + " " + num2 + "?");
+        double answer = 0;
+        if (opperator == 1){
+            answer = num1 + num2;
+        }else if (opperator == 2) {
+            answer = num1 * num2;
+        } else if (opperator == 3) {
+            answer = num1 - num2;
+        } else {
+            answer = num1 / num2;
+        }
+        int Inpanswer = input.nextInt();
+
+        if (Inpanswer == answer) {
+            System.out.println("Correct");
+        } else {
+            System.out.println("Incorrect");
+        }
+
+
     }
 }
+/*
+What is 2 - 4?
+-2
+Correct
+ */
