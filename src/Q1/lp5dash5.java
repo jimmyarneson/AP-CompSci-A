@@ -7,16 +7,15 @@ public class lp5dash5 {
         System.out.print("Enter a positve integer: ");
         int number = input.nextInt();
 
-        while (number > 0) {
-            int remainder = number % 10;
-            Integer.toString(remainder);
+             String str = Integer.toString(number);
 
-            System.out.println(Integer.substring(-1));
-
-
-
-            number = number /10;
-        }
+            System.out.print(str.substring(0, 1) + "\n" + str.substring(1, 2) + "\n" + str.substring(2, 3));
 
     }
 }
+/*
+Enter a positve integer: 546
+5
+4
+6
+ */
