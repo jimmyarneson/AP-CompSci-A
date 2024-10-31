@@ -26,8 +26,21 @@ public class Class82a {
     public void calc() {
         mysum = myNum1 + myNum2;
         mydiff = myNum1 - myNum2;
-        myprod = myNum1 / myNum2;
-        myavg = mysum / 2;
-        myabsv = Math.abs(mysum);
+        myprod = myNum1 * myNum2;
+        myavg = mysum / 2.0;
+        myabsv = Math.abs(mydiff);
+        mymin = Math.abs(myNum1 + myNum2) - myNum2;
+        mymax = Math.abs(myNum1 - myNum2) + myNum1;
     }
+
+    public int getsum() {return mysum;}
+    public int getdiff() {return mydiff;}
+    public double getprod() {return myprod;}
+    public double getavg() {return myavg;}
+    public double getabsv() {return myabsv;}
+    public int getmin() {return mymin;}
+    public int getmax() {return mymax;}
+
+
+
 }
