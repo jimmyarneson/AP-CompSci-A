@@ -7,18 +7,18 @@ public class classLp3_9 {
     private int myCurrentyear;
     private int myCurrentmonth;
     private int myCurrentday;
-    private int myTimealive;
-    private int myHoursslept;
+    private double myTimealive;
+    private double myHoursslept;
 
-    public classLp3_9(int by, int bm, int bd, int cy, int cm, int cd, double ta, double hs) {
+    public classLp3_9(int by, int bm, int bd, int cy, int cm, int cd) {
         myBirthyear = by;
         myBirthmonth = bm;
         myBirthday = bd;
         myCurrentyear = cy;
         myCurrentmonth = cm;
         myCurrentday = cd;
-        ta = 0.0;
-        hs = 0.0;
+        myTimealive = 0.0;
+        myHoursslept = 0.0;
     }
 
     public void calculation() {
