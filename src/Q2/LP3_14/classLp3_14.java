@@ -29,6 +29,6 @@ public class classLp3_14 {
 
     public void calculator() {
         peran = (Math.round(anTot/tot * 100.0*100)/100.00);
-        peram = (Math.round(marTot/tot * 100)/100.00);
+        peram = (Math.round(marTot/tot * 100*100)/100.00);
     }
 }
