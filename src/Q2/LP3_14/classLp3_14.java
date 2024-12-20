@@ -31,4 +31,11 @@ public class classLp3_14 {
         peran = (Math.round(anTot/tot * 100.0*100)/100.00);
         peram = (Math.round(marTot/tot * 100*100)/100.00);
     }
+
+    public String toString(){
+        return "Canidates\t\t Votes Percentage" +
+                "\nAwbrey \t\t" + anTot + "\t" + peran + " %" +
+                "\nMartinez\t\t" + marTot + "\t" + peram + " %" +
+                "\nTotal Votes:\t " + tot;
+    }
 }
